@@ -1,4 +1,4 @@
-I have been working on this script for around a week in tandem with a Power Automate script to take members of an AD OU, put them into excel files, and then send emails to the correct people to verify the users. 
+I have been working on this script for around a week in tandem with Power Automate script to take members of an AD OU, put them into Excel files, and then send emails to the correct people to verify the users. 
 Here is how to modify the script to work with any AD 
 
 This Powershell file was created to automate the process of going through Active Directory and recording a group's members into an excel file. Currently it is set up to go through the OU found at MCN\MCN_Groups, going into each of the sub OUs and getting the members from the groups located there. It also grabs from another specific OU that can be found at AT\Cloud_Services\MCN\MCN_Managed, along with the OU inside of it, ResourceCalendars. The main block of code that covers everything but the specific OUs and groups, is from line 1 to 152. The specific groups are covered in two for loops below it. 
